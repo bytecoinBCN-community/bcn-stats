@@ -1,0 +1,65 @@
+{
+ "schema": 1,
+ "updated": "2026-11-07T07:22:03Z",
+ "height": 3656705,
+ "difficulty": 23374108,
+ "hashrate_khs": 195,
+ "supply_percent": 99.9999,
+ "our_share": {
+  "blocks": 271,
+  "window": 720,
+  "percent": 37.6,
+  "at": "2026-11-07T07:22:08Z"
+ },
+ "nodes": {
+  "probed": 734,
+  "at": "2026-11-07T07:23:15Z",
+  "full": [
+   {
+    "address": "135.181.141.137:8080",
+    "height": 3656705,
+    "location": "Finland, Helsinki"
+   },
+   {
+    "address": "149.28.44.51:8080",
+    "height": 3656705,
+    "location": "USA, New Jersey"
+   },
+   {
+    "address": "195.154.106.27:8080",
+    "height": 3656705,
+    "location": "France, Paris"
+   },
+   {
+    "address": "198.27.69.208:8080",
+    "height": 3656705,
+    "location": "Canada, Montreal"
+   },
+   {
+    "address": "31.220.87.232:8080",
+    "height": 3656705,
+    "location": "France, Lauterbourg"
+   },
+   {
+    "address": "45.77.142.241:8080",
+    "height": 3656705,
+    "location": "Germany, Frankfurt"
+   },
+   {
+    "address": "54.39.84.66:8080",
+    "height": 3656705,
+    "location": "Canada, Beauharnois"
+   },
+   {
+    "address": "64.31.61.150:8080",
+    "height": 3656705,
+    "location": "USA, Los Angeles"
+   },
+   {
+    "address": "66.42.62.115:8080",
+    "height": 3656705,
+    "location": "Singapore"
+   }
+  ]
+ }
+}
