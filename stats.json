@@ -1,9 +1,9 @@
 {
  "schema": 1,
- "updated": "2026-11-07T13:15:36Z",
- "height": 3656871,
- "difficulty": 22845373,
- "hashrate_khs": 190,
+ "updated": "2026-11-07T13:30:57Z",
+ "height": 3656875,
+ "difficulty": 22937329,
+ "hashrate_khs": 191,
  "supply_percent": 99.9999,
  "our_share": {
   "blocks": 277,
@@ -12,52 +12,52 @@
   "at": "2026-11-07T13:15:38Z"
  },
  "nodes": {
-  "probed": 734,
-  "at": "2026-11-07T07:23:15Z",
+  "probed": 731,
+  "at": "2026-11-07T13:32:04Z",
   "full": [
    {
     "address": "135.181.141.137:8080",
-    "height": 3656705,
+    "height": 3656875,
     "location": "Finland, Helsinki"
    },
    {
     "address": "149.28.44.51:8080",
-    "height": 3656705,
+    "height": 3656875,
     "location": "USA, New Jersey"
    },
    {
     "address": "195.154.106.27:8080",
-    "height": 3656705,
+    "height": 3656875,
     "location": "France, Paris"
    },
    {
     "address": "198.27.69.208:8080",
-    "height": 3656705,
+    "height": 3656875,
     "location": "Canada, Montreal"
    },
    {
     "address": "31.220.87.232:8080",
-    "height": 3656705,
+    "height": 3656875,
     "location": "France, Lauterbourg"
    },
    {
     "address": "45.77.142.241:8080",
-    "height": 3656705,
+    "height": 3656875,
     "location": "Germany, Frankfurt"
    },
    {
     "address": "54.39.84.66:8080",
-    "height": 3656705,
+    "height": 3656875,
     "location": "Canada, Beauharnois"
    },
    {
     "address": "64.31.61.150:8080",
-    "height": 3656705,
+    "height": 3656875,
     "location": "USA, Los Angeles"
    },
    {
     "address": "66.42.62.115:8080",
-    "height": 3656705,
+    "height": 3656875,
     "location": "Singapore"
    }
   ]
