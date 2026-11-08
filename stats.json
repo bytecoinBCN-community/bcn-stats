@@ -1,15 +1,15 @@
 {
  "schema": 1,
- "updated": "2026-11-08T00:45:57Z",
- "height": 3657239,
- "difficulty": 23865792,
- "hashrate_khs": 199,
+ "updated": "2026-11-08T01:00:57Z",
+ "height": 3657248,
+ "difficulty": 23741594,
+ "hashrate_khs": 198,
  "supply_percent": 99.9999,
  "our_share": {
-  "blocks": 280,
+  "blocks": 277,
   "window": 720,
-  "percent": 38.9,
-  "at": "2026-11-07T23:45:59Z"
+  "percent": 38.5,
+  "at": "2026-11-08T01:00:59Z"
  },
  "nodes": {
   "probed": 733,
