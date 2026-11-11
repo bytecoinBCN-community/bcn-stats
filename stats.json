@@ -1,63 +1,63 @@
 {
  "schema": 1,
- "updated": "2026-11-11T23:30:49Z",
- "height": 3659491,
- "difficulty": 16756377,
- "hashrate_khs": 140,
+ "updated": "2026-11-11T23:45:49Z",
+ "height": 3659496,
+ "difficulty": 16527436,
+ "hashrate_khs": 138,
  "supply_percent": 99.9999,
  "our_share": {
-  "blocks": 420,
+  "blocks": 431,
   "window": 720,
-  "percent": 58.3,
-  "at": "2026-11-11T22:30:55Z"
+  "percent": 59.9,
+  "at": "2026-11-11T23:45:55Z"
  },
  "nodes": {
-  "probed": 621,
-  "at": "2026-11-11T17:31:49Z",
+  "probed": 746,
+  "at": "2026-11-11T23:47:02Z",
   "full": [
    {
     "address": "135.181.141.137:8080",
-    "height": 3659375,
+    "height": 3659496,
     "location": "Finland, Helsinki"
    },
    {
     "address": "149.28.44.51:8080",
-    "height": 3659375,
+    "height": 3659496,
     "location": "USA, New Jersey"
    },
    {
     "address": "195.154.106.27:8080",
-    "height": 3659375,
+    "height": 3659496,
     "location": "France, Paris"
    },
    {
     "address": "198.27.69.208:8080",
-    "height": 3659375,
+    "height": 3659496,
     "location": "Canada, Montreal"
    },
    {
     "address": "31.220.87.232:8080",
-    "height": 3659375,
+    "height": 3659496,
     "location": "France, Lauterbourg"
    },
    {
     "address": "45.77.142.241:8080",
-    "height": 3659375,
+    "height": 3659496,
     "location": "Germany, Frankfurt"
    },
    {
     "address": "54.39.84.66:8080",
-    "height": 3659375,
+    "height": 3659496,
     "location": "Canada, Beauharnois"
    },
    {
     "address": "64.31.61.150:8080",
-    "height": 3659375,
+    "height": 3659496,
     "location": "USA, Los Angeles"
    },
    {
     "address": "66.42.62.115:8080",
-    "height": 3659375,
+    "height": 3659496,
     "location": "Singapore"
    }
   ]
@@ -66,6 +66,6 @@
   "date": "2026-11-11T17:59:48Z",
   "repo": "amethyst-web-wallet",
   "url": "https://github.com/bytecoinBCN-community/amethyst-web-wallet/commit/0daf6aba806b73ad1358b55f0d0a27c2ec3ba127",
-  "at": "2026-11-11T22:30:53Z"
+  "at": "2026-11-11T23:45:52Z"
  }
 }
