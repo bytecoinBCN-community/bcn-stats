@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Collects public Bytecoin network figures into stats.json and publishes them with git.
 
-Chain figures are refreshed on every run, the X3 block share hourly, the node scan every 6 hours.
+Chain figures are refreshed on every run, the X3 block share and the latest code commit hourly,
+the node scan every 6 hours.
 Nothing is published while the node is behind or has no peers, so the page shows stale data as stale.
 """
 import argparse
@@ -27,6 +28,11 @@ SHARE_WINDOW = 720
 TIP_TOLERANCE = 10  # blocks behind the tip that still count as "at the top of the chain"
 MAX_SUPPLY = 2 ** 64 - 1
 BLOCK_TARGET = 120
+COMMIT_EVERY = 3600
+GITHUB_OWNER = "bytecoinBCN-community"
+# Code repositories with their release branches. bcn-stats itself is left out: its commits are just new figures.
+CODE_REPOS = [("bytecoin", "ubuntu-24.04"), ("bcn-stratum", "main"), ("bcn-crawl", "main"),
+              ("amethyst-web-wallet", "main"), ("bcn-explorer", "main"), ("bcn-donate", "main")]
 
 # Never published: our own home node. Set it in the service environment, not in this public file.
 EXCLUDE = set(filter(None, os.environ.get("BCN_STATS_EXCLUDE", "").split(",")))
@@ -79,6 +85,31 @@ def block_share(top):
         accepted.setdefault(int(m[1]), set()).add(m[2])
     ours = sum(header(h)["hash"] in accepted.get(h, ()) for h in range(top - SHARE_WINDOW + 1, top + 1))
     return {"blocks": ours, "window": SHARE_WINDOW, "percent": round(100 * ours / SHARE_WINDOW, 1), "at": now()}
+
+
+def last_commit():
+    """Newest commit across our code repositories, read from the public GitHub API (one request per repo)."""
+    best = None
+    for repo, branch in CODE_REPOS:
+        url = "https://api.github.com/repos/%s/%s/commits/%s" % (GITHUB_OWNER, repo, branch)
+        req = urllib.request.Request(url, headers={"Accept": "application/vnd.github+json", "User-Agent": "bcn-stats"})
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                c = json.load(r)
+            date = c["commit"]["committer"]["date"]
+            link = c["html_url"]
+        except (OSError, ValueError, KeyError, TypeError) as ex:
+            print("commit of %s not read: %s" % (repo, ex), file=sys.stderr)
+            continue
+        if not re.fullmatch(r"\d{4}-\d\d-\d\dT\d\d:\d\d:\d\dZ", date or "") or \
+                not str(link).startswith("https://github.com/%s/%s/commit/" % (GITHUB_OWNER, repo)):
+            continue
+        if best is None or date > best["date"]:
+            best = {"date": date, "repo": repo, "url": link}
+    if best is None:
+        raise RuntimeError("no commit could be read")
+    best["at"] = now()
+    return best
 
 
 def public_address(addr):
@@ -161,7 +192,13 @@ def main():
         "supply_percent": round(100 * head["already_generated_coins"] / MAX_SUPPLY, 4),
         "our_share": prev.get("our_share"),
         "nodes": prev.get("nodes"),
+        "last_commit": prev.get("last_commit"),
     }
+    if args.force or age((prev.get("last_commit") or {}).get("at")) >= COMMIT_EVERY:
+        try:
+            stats["last_commit"] = last_commit()
+        except RuntimeError as ex:
+            print("last commit not refreshed, keeping the previous one: %s" % ex, file=sys.stderr)
     if args.force or age((prev.get("our_share") or {}).get("at")) >= SHARE_EVERY:
         stats["our_share"] = block_share(top)
     if args.force or age((prev.get("nodes") or {}).get("at")) >= SCAN_EVERY:

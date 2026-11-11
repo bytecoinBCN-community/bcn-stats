@@ -14,6 +14,7 @@ This is an independent community project, not affiliated with the Bytecoin found
 | `supply_percent` | Coins generated as a share of 2^64 - 1 atomic units | every 15 minutes |
 | `our_share` | Blocks from our X3 among the latest 720 that are in the main chain | hourly |
 | `nodes` | Full nodes at the top of the chain, from a P2P handshake scan | every 6 hours |
+| `last_commit` | Newest commit in our code repositories: `date` (UTC), `repo`, `url` | hourly |
 
 Nothing is published while our node is behind or has no peers. If `updated` stops moving, the node or its connection is down, so treat the figures as out of date.
 
