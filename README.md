@@ -22,7 +22,9 @@ Nothing is published while our node is behind or has no peers. If `updated` stop
 
 ## Code
 
-`collect.py` produces this file. The scanner is [bcn-crawl](https://github.com/bytecoinBCN-community/bcn-crawl).
+`collect.py` produces this file on our public node's server. The scanner is [bcn-crawl](https://github.com/bytecoinBCN-community/bcn-crawl).
+
+The miner runs on a different machine. Once an hour that machine runs `collect.py --share-json` and sends the result over SSH with a key that may only run `bcn-share-in`, which checks the JSON and stores it (`BCN_SHARE_FILE`). If the miner's machine is offline, `our_share` keeps its last value and its `at` time shows how old it is.
 
 ## Licence
 

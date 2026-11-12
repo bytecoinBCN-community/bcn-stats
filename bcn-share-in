@@ -1,0 +1,29 @@
+#!/usr/bin/python3 -I
+"""Forced command for the miner host's SSH key: reads our block share as JSON from stdin and stores it.
+
+Anything that is not a valid share is refused. The key can do nothing else (see authorized_keys).
+"""
+import json
+import os
+import sys
+
+sys.path.insert(0, "/opt/bcn-stats")
+from collect import valid_share  # noqa: E402
+
+OUT = "/var/lib/bcn-share/our_share.json"
+
+data = sys.stdin.buffer.read(4097)
+if len(data) > 4096:
+    sys.exit("too large")
+try:
+    share = json.loads(data)
+except ValueError:
+    sys.exit("not JSON")
+if not valid_share(share):
+    sys.exit("not a valid share")
+tmp = OUT + ".tmp"
+with open(tmp, "w") as f:
+    json.dump(share, f)
+os.chmod(tmp, 0o644)
+os.replace(tmp, OUT)
+print("stored %s" % share["at"])

@@ -36,16 +36,22 @@ CODE_REPOS = [("bytecoin", "ubuntu-24.04"), ("bcn-stratum", "main"), ("bcn-crawl
 
 # Never published: our own home node. Set it in the service environment, not in this public file.
 EXCLUDE = set(filter(None, os.environ.get("BCN_STATS_EXCLUDE", "").split(",")))
+# Where the miner runs elsewhere, it sends its block share here (see --share-json); otherwise it is read from
+# the local bcn-stratum journal.
+SHARE_FILE = os.environ.get("BCN_SHARE_FILE", "")
+SHARE_MAX_AGE = 3 * 3600
 
 LOCATIONS = {
     "45.77.142.241": "Germany, Frankfurt",
     "31.220.87.232": "France, Lauterbourg",
     "195.154.106.27": "France, Paris",
+    "78.27.242.81": "Poland",
     "135.181.141.137": "Finland, Helsinki",
     "198.27.69.208": "Canada, Montreal",
     "54.39.84.66": "Canada, Beauharnois",
     "149.28.44.51": "USA, New Jersey",
     "64.31.61.150": "USA, Los Angeles",
+    "68.168.222.220": "USA, New Jersey",
     "66.42.62.115": "Singapore",
 }
 SEEDS = [ip + ":8080" for ip in LOCATIONS] + ["108.61.174.232:8080", "207.246.127.160:8080", "51.83.67.8:8080"]
@@ -112,6 +118,24 @@ def last_commit():
     return best
 
 
+def valid_share(s):
+    """True for {"blocks", "window", "percent", "at"} as block_share() makes it."""
+    return (isinstance(s, dict) and set(s) == {"blocks", "window", "percent", "at"}
+            and isinstance(s["blocks"], int) and isinstance(s["window"], int) and 0 <= s["blocks"] <= s["window"] <= 10000
+            and isinstance(s["percent"], (int, float)) and 0 <= s["percent"] <= 100
+            and isinstance(s["at"], str) and re.fullmatch(r"\d{4}-\d\d-\d\dT\d\d:\d\d:\d\dZ", s["at"]) is not None)
+
+
+def received_share():
+    """The share the miner's host sent, if it is valid and recent, else None."""
+    try:
+        with open(SHARE_FILE) as f:
+            s = json.load(f)
+    except (OSError, ValueError):
+        return None
+    return s if valid_share(s) and age(s["at"]) < SHARE_MAX_AGE else None
+
+
 def public_address(addr):
     host, _, port = addr.rpartition(":")
     try:
@@ -167,10 +191,18 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--dry-run", action="store_true", help="print the result, publish nothing")
     ap.add_argument("--force", action="store_true", help="refresh the share and the node scan now")
+    ap.add_argument("--share-json", action="store_true",
+                    help="only print our block share as JSON, for sending to the host that publishes")
     args = ap.parse_args()
 
     st = rpc("get_status")
     top = st["top_block_height"]
+    if args.share_json:
+        if top + 1 < st["top_known_block_height"] or st["outgoing_peer_count"] == 0:
+            print("node not synced, no share", file=sys.stderr)
+            return 1
+        print(json.dumps(block_share(top)))
+        return 0
     if top + 1 < st["top_known_block_height"] or st["outgoing_peer_count"] == 0:
         print("node not synced (height %d of %d, %d peers), nothing published"
               % (top, st["top_known_block_height"], st["outgoing_peer_count"]))
@@ -199,7 +231,9 @@ def main():
             stats["last_commit"] = last_commit()
         except RuntimeError as ex:
             print("last commit not refreshed, keeping the previous one: %s" % ex, file=sys.stderr)
-    if args.force or age((prev.get("our_share") or {}).get("at")) >= SHARE_EVERY:
+    if SHARE_FILE:
+        stats["our_share"] = received_share() or prev.get("our_share")
+    elif args.force or age((prev.get("our_share") or {}).get("at")) >= SHARE_EVERY:
         stats["our_share"] = block_share(top)
     if args.force or age((prev.get("nodes") or {}).get("at")) >= SCAN_EVERY:
         try:
