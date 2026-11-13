@@ -1,9 +1,9 @@
 {
  "schema": 1,
- "updated": "2026-11-13T01:15:55Z",
- "height": 3660100,
- "difficulty": 9196199,
- "hashrate_khs": 77,
+ "updated": "2026-11-13T01:30:53Z",
+ "height": 3660109,
+ "difficulty": 9173604,
+ "hashrate_khs": 76,
  "supply_percent": 99.9999,
  "our_share": {
   "blocks": 522,
@@ -12,62 +12,62 @@
   "at": "2026-11-13T01:05:39Z"
  },
  "nodes": {
-  "probed": 624,
-  "at": "2026-11-12T19:16:06Z",
+  "probed": 623,
+  "at": "2026-11-13T01:31:56Z",
   "full": [
    {
     "address": "135.181.141.137:8080",
-    "height": 3659864,
+    "height": 3660109,
     "location": "Finland, Helsinki"
    },
    {
     "address": "149.28.44.51:8080",
-    "height": 3659864,
+    "height": 3660109,
     "location": "USA, New Jersey"
    },
    {
     "address": "195.154.106.27:8080",
-    "height": 3659864,
+    "height": 3660109,
     "location": "France, Paris"
    },
    {
     "address": "198.27.69.208:8080",
-    "height": 3659864,
+    "height": 3660109,
     "location": "Canada, Montreal"
    },
    {
     "address": "31.220.87.232:8080",
-    "height": 3659864,
+    "height": 3660109,
     "location": "France, Lauterbourg"
    },
    {
     "address": "45.77.142.241:8080",
-    "height": 3659864,
+    "height": 3660109,
     "location": "Germany, Frankfurt"
    },
    {
     "address": "54.39.84.66:8080",
-    "height": 3659864,
+    "height": 3660109,
     "location": "Canada, Beauharnois"
    },
    {
     "address": "64.31.61.150:8080",
-    "height": 3659864,
+    "height": 3660109,
     "location": "USA, Los Angeles"
    },
    {
     "address": "66.42.62.115:8080",
-    "height": 3659864,
+    "height": 3660109,
     "location": "Singapore"
    },
    {
     "address": "68.168.222.220:8080",
-    "height": 3659864,
+    "height": 3660109,
     "location": "USA, New Jersey"
    },
    {
     "address": "78.27.242.81:8080",
-    "height": 3659864,
+    "height": 3660109,
     "location": "Poland"
    }
   ]
@@ -76,6 +76,6 @@
   "date": "2026-11-12T12:05:30Z",
   "repo": "amethyst-web-wallet",
   "url": "https://github.com/bytecoinBCN-community/amethyst-web-wallet/commit/badb345b932699c95c675a969db5e5c8415e02fa",
-  "at": "2026-11-13T00:15:57Z"
+  "at": "2026-11-13T01:30:55Z"
  }
 }
