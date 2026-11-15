@@ -1,9 +1,9 @@
 {
  "schema": 1,
- "updated": "2026-11-15T19:45:18Z",
- "height": 3661518,
- "difficulty": 3784472,
- "hashrate_khs": 32,
+ "updated": "2026-11-15T20:00:39Z",
+ "height": 3661522,
+ "difficulty": 3746138,
+ "hashrate_khs": 31,
  "supply_percent": 99.9999,
  "our_share": {
   "blocks": 161,
