@@ -1,8 +1,8 @@
 {
  "schema": 1,
- "updated": "2026-11-15T07:45:45Z",
- "height": 3661288,
- "difficulty": 5640532,
+ "updated": "2026-11-15T08:00:55Z",
+ "height": 3661292,
+ "difficulty": 5663674,
  "hashrate_khs": 47,
  "supply_percent": 99.9999,
  "our_share": {
@@ -71,6 +71,6 @@
   "date": "2026-11-14T21:19:04Z",
   "repo": "bcn-explorer",
   "url": "https://github.com/bytecoinBCN-community/bcn-explorer/commit/2fef04bd6e2558883f22a3488f1555f9d8e2d2ed",
-  "at": "2026-11-15T06:45:56Z"
+  "at": "2026-11-15T08:00:57Z"
  }
 }
