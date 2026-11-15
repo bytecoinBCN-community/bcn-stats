@@ -1,9 +1,9 @@
 {
  "schema": 1,
- "updated": "2026-11-15T18:15:14Z",
- "height": 3661476,
- "difficulty": 4021919,
- "hashrate_khs": 34,
+ "updated": "2026-11-15T18:31:04Z",
+ "height": 3661485,
+ "difficulty": 3985516,
+ "hashrate_khs": 33,
  "supply_percent": 99.9999,
  "our_share": {
   "blocks": 156,
@@ -68,9 +68,9 @@
   ]
  },
  "last_commit": {
-  "date": "2026-11-15T16:47:25Z",
-  "repo": "bcn-stratum",
-  "url": "https://github.com/bytecoinBCN-community/bcn-stratum/commit/aa46b924202a354268f5a2bd0ede40949be7ad9b",
-  "at": "2026-11-15T17:15:32Z"
+  "date": "2026-11-15T18:15:34Z",
+  "repo": "amethyst-web-wallet",
+  "url": "https://github.com/bytecoinBCN-community/amethyst-web-wallet/commit/91abf5047535ce3d568f2b945d8d619caab6fdf4",
+  "at": "2026-11-15T18:31:07Z"
  }
 }
