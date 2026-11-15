@@ -1,15 +1,15 @@
 {
  "schema": 1,
- "updated": "2026-11-15T17:00:15Z",
- "height": 3661442,
- "difficulty": 4332356,
- "hashrate_khs": 36,
+ "updated": "2026-11-15T17:15:30Z",
+ "height": 3661453,
+ "difficulty": 4208585,
+ "hashrate_khs": 35,
  "supply_percent": 99.9999,
  "our_share": {
-  "blocks": 149,
+  "blocks": 153,
   "window": 720,
-  "percent": 20.7,
-  "at": "2026-11-15T16:05:55Z"
+  "percent": 21.2,
+  "at": "2026-11-15T17:05:48Z"
  },
  "nodes": {
   "probed": 744,
@@ -68,9 +68,9 @@
   ]
  },
  "last_commit": {
-  "date": "2026-11-14T21:19:04Z",
-  "repo": "bcn-explorer",
-  "url": "https://github.com/bytecoinBCN-community/bcn-explorer/commit/2fef04bd6e2558883f22a3488f1555f9d8e2d2ed",
-  "at": "2026-11-15T16:00:43Z"
+  "date": "2026-11-15T16:47:25Z",
+  "repo": "bcn-stratum",
+  "url": "https://github.com/bytecoinBCN-community/bcn-stratum/commit/aa46b924202a354268f5a2bd0ede40949be7ad9b",
+  "at": "2026-11-15T17:15:32Z"
  }
 }
