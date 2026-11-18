@@ -1,8 +1,8 @@
 {
  "schema": 1,
- "updated": "2026-11-18T18:45:57Z",
- "height": 3663713,
- "difficulty": 3847509,
+ "updated": "2026-11-18T19:00:04Z",
+ "height": 3663718,
+ "difficulty": 3861892,
  "hashrate_khs": 32,
  "supply_percent": 99.9999,
  "our_share": {
@@ -12,57 +12,62 @@
   "at": "2026-11-18T18:05:42Z"
  },
  "nodes": {
-  "probed": 620,
-  "at": "2026-11-18T12:46:45Z",
+  "probed": 754,
+  "at": "2026-11-18T19:01:08Z",
   "full": [
    {
     "address": "135.181.141.137:8080",
-    "height": 3663500,
+    "height": 3663718,
     "location": "Finland, Helsinki"
    },
    {
     "address": "149.28.44.51:8080",
-    "height": 3663500,
+    "height": 3663718,
     "location": "USA, New Jersey"
    },
    {
     "address": "195.154.106.27:8080",
-    "height": 3663500,
+    "height": 3663718,
     "location": "France, Paris"
    },
    {
     "address": "198.27.69.208:8080",
-    "height": 3663500,
+    "height": 3663718,
     "location": "Canada, Montreal"
    },
    {
     "address": "31.220.87.232:8080",
-    "height": 3663500,
+    "height": 3663718,
     "location": "France, Lauterbourg"
    },
    {
     "address": "45.77.142.241:8080",
-    "height": 3663500,
+    "height": 3663718,
     "location": "Germany, Frankfurt"
    },
    {
     "address": "54.39.84.66:8080",
-    "height": 3663500,
+    "height": 3663718,
     "location": "Canada, Beauharnois"
    },
    {
     "address": "64.31.61.150:8080",
-    "height": 3663500,
+    "height": 3663718,
     "location": "USA, Los Angeles"
    },
    {
     "address": "66.42.62.115:8080",
-    "height": 3663500,
+    "height": 3663718,
     "location": "Singapore"
    },
    {
+    "address": "68.168.222.220:8080",
+    "height": 3663718,
+    "location": "USA, New Jersey"
+   },
+   {
     "address": "78.27.242.81:8080",
-    "height": 3663500,
+    "height": 3663718,
     "location": "Poland"
    }
   ]
@@ -71,6 +76,6 @@
   "date": "2026-11-15T18:15:34Z",
   "repo": "amethyst-web-wallet",
   "url": "https://github.com/bytecoinBCN-community/amethyst-web-wallet/commit/91abf5047535ce3d568f2b945d8d619caab6fdf4",
-  "at": "2026-11-18T17:46:00Z"
+  "at": "2026-11-18T19:00:07Z"
  }
 }
