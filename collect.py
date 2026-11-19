@@ -32,7 +32,8 @@ COMMIT_EVERY = 3600
 GITHUB_OWNER = "bytecoinBCN-community"
 # Code repositories with their release branches. bcn-stats itself is left out: its commits are just new figures.
 CODE_REPOS = [("bytecoin", "ubuntu-24.04"), ("bcn-stratum", "main"), ("bcn-crawl", "main"),
-              ("amethyst-web-wallet", "main"), ("bcn-explorer", "main"), ("bcn-donate", "main")]
+              ("amethyst-web-wallet", "main"), ("bcn-explorer", "main"), ("bcn-donate", "main"),
+              ("bcn-miner", "main"), ("bcn-wallet", "main"), ("bcn-pool", "main")]
 
 # Never published: our own home node. Set it in the service environment, not in this public file.
 EXCLUDE = set(filter(None, os.environ.get("BCN_STATS_EXCLUDE", "").split(",")))
