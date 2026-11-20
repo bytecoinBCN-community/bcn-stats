@@ -1,15 +1,15 @@
 {
  "schema": 1,
- "updated": "2026-11-20T09:00:04Z",
- "height": 3664911,
- "difficulty": 4730372,
+ "updated": "2026-11-20T09:15:32Z",
+ "height": 3664919,
+ "difficulty": 4738166,
  "hashrate_khs": 39,
  "supply_percent": 99.9999,
  "our_share": {
-  "blocks": 273,
+  "blocks": 275,
   "window": 720,
-  "percent": 37.9,
-  "at": "2026-11-20T08:05:47Z"
+  "percent": 38.2,
+  "at": "2026-11-20T09:06:01Z"
  },
  "nodes": {
   "probed": 757,
@@ -76,6 +76,6 @@
   "date": "2026-11-18T17:23:37Z",
   "repo": "bcn-miner",
   "url": "https://github.com/bytecoinBCN-community/bcn-miner/commit/cab4852a651e11a3d3d19e4eea48298284a3a3d9",
-  "at": "2026-11-20T08:01:00Z"
+  "at": "2026-11-20T09:15:36Z"
  }
 }
