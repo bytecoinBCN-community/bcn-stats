@@ -1,8 +1,8 @@
 {
  "schema": 1,
- "updated": "2026-11-20T15:45:49Z",
- "height": 3665130,
- "difficulty": 4940877,
+ "updated": "2026-11-20T16:00:30Z",
+ "height": 3665140,
+ "difficulty": 4950397,
  "hashrate_khs": 41,
  "supply_percent": 99.9999,
  "our_share": {
@@ -76,6 +76,6 @@
   "date": "2026-11-18T17:23:37Z",
   "repo": "bcn-miner",
   "url": "https://github.com/bytecoinBCN-community/bcn-miner/commit/cab4852a651e11a3d3d19e4eea48298284a3a3d9",
-  "at": "2026-11-20T14:46:01Z"
+  "at": "2026-11-20T16:00:34Z"
  }
 }
