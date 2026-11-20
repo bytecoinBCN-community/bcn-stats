@@ -1,15 +1,15 @@
 {
  "schema": 1,
- "updated": "2026-11-20T18:01:03Z",
- "height": 3665192,
- "difficulty": 4918729,
+ "updated": "2026-11-20T18:16:04Z",
+ "height": 3665199,
+ "difficulty": 4936731,
  "hashrate_khs": 41,
  "supply_percent": 99.9999,
  "our_share": {
-  "blocks": 270,
+  "blocks": 265,
   "window": 720,
-  "percent": 37.5,
-  "at": "2026-11-20T17:06:01Z"
+  "percent": 36.8,
+  "at": "2026-11-20T18:05:31Z"
  },
  "nodes": {
   "probed": 622,
@@ -71,6 +71,6 @@
   "date": "2026-11-20T16:59:43Z",
   "repo": "bcn-wallet",
   "url": "https://github.com/bytecoinBCN-community/bcn-wallet/commit/249a945a2755a54b0bd4e320d22dc60adb8cd7d8",
-  "at": "2026-11-20T17:15:28Z"
+  "at": "2026-11-20T18:16:08Z"
  }
 }
