@@ -1,8 +1,8 @@
 {
  "schema": 1,
- "updated": "2026-11-24T21:00:06Z",
- "height": 3668112,
- "difficulty": 5103946,
+ "updated": "2026-11-24T21:15:57Z",
+ "height": 3668121,
+ "difficulty": 5127660,
  "hashrate_khs": 43,
  "supply_percent": 99.9999,
  "our_share": {
@@ -12,62 +12,62 @@
   "at": "2026-11-24T00:05:50Z"
  },
  "nodes": {
-  "probed": 764,
-  "at": "2026-11-24T15:01:50Z",
+  "probed": 766,
+  "at": "2026-11-24T21:17:03Z",
   "full": [
    {
     "address": "135.181.141.137:8080",
-    "height": 3667932,
+    "height": 3668121,
     "location": "Finland, Helsinki"
    },
    {
     "address": "149.28.44.51:8080",
-    "height": 3667932,
+    "height": 3668121,
     "location": "USA, New Jersey"
    },
    {
     "address": "195.154.106.27:8080",
-    "height": 3667932,
+    "height": 3668121,
     "location": "France, Paris"
    },
    {
     "address": "198.27.69.208:8080",
-    "height": 3667932,
+    "height": 3668121,
     "location": "Canada, Montreal"
    },
    {
     "address": "31.220.87.232:8080",
-    "height": 3667932,
+    "height": 3668121,
     "location": "France, Lauterbourg"
    },
    {
     "address": "45.77.142.241:8080",
-    "height": 3667932,
+    "height": 3668121,
     "location": "Germany, Frankfurt"
    },
    {
     "address": "54.39.84.66:8080",
-    "height": 3667932,
+    "height": 3668121,
     "location": "Canada, Beauharnois"
    },
    {
     "address": "64.31.61.150:8080",
-    "height": 3667932,
+    "height": 3668121,
     "location": "USA, Los Angeles"
    },
    {
     "address": "66.42.62.115:8080",
-    "height": 3667932,
+    "height": 3668121,
     "location": "Singapore"
    },
    {
     "address": "68.168.222.220:8080",
-    "height": 3667932,
+    "height": 3668121,
     "location": "USA, New Jersey"
    },
    {
     "address": "78.27.242.81:8080",
-    "height": 3667932,
+    "height": 3668121,
     "location": "Poland"
    }
   ]
@@ -76,6 +76,6 @@
   "date": "2026-11-20T18:27:59Z",
   "repo": "amethyst-web-wallet",
   "url": "https://github.com/bytecoinBCN-community/amethyst-web-wallet/commit/8d206eca462b1c5d2397d84b7b3ca8a55f370251",
-  "at": "2026-11-24T20:00:53Z"
+  "at": "2026-11-24T21:16:01Z"
  }
 }
