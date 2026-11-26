@@ -1,8 +1,8 @@
 {
  "schema": 1,
- "updated": "2026-11-26T10:30:32Z",
- "height": 3669290,
- "difficulty": 5720762,
+ "updated": "2026-11-26T10:45:50Z",
+ "height": 3669303,
+ "difficulty": 5700164,
  "hashrate_khs": 48,
  "supply_percent": 99.9999,
  "our_share": {
@@ -13,61 +13,61 @@
  },
  "nodes": {
   "probed": 769,
-  "at": "2026-11-26T04:31:57Z",
+  "at": "2026-11-26T10:46:56Z",
   "full": [
    {
     "address": "135.181.141.137:8080",
-    "height": 3669095,
+    "height": 3669303,
     "location": "Finland, Helsinki"
    },
    {
     "address": "149.28.44.51:8080",
-    "height": 3669095,
+    "height": 3669303,
     "location": "USA, New Jersey"
    },
    {
     "address": "195.154.106.27:8080",
-    "height": 3669095,
+    "height": 3669303,
     "location": "France, Paris"
    },
    {
     "address": "198.27.69.208:8080",
-    "height": 3669095,
+    "height": 3669303,
     "location": "Canada, Montreal"
    },
    {
     "address": "31.220.87.232:8080",
-    "height": 3669095,
+    "height": 3669303,
     "location": "France, Lauterbourg"
    },
    {
     "address": "45.77.142.241:8080",
-    "height": 3669095,
+    "height": 3669303,
     "location": "Germany, Frankfurt"
    },
    {
     "address": "54.39.84.66:8080",
-    "height": 3669095,
+    "height": 3669303,
     "location": "Canada, Beauharnois"
    },
    {
     "address": "64.31.61.150:8080",
-    "height": 3669095,
+    "height": 3669303,
     "location": "USA, Los Angeles"
    },
    {
     "address": "66.42.62.115:8080",
-    "height": 3669095,
+    "height": 3669303,
     "location": "Singapore"
    },
    {
     "address": "68.168.222.220:8080",
-    "height": 3669095,
+    "height": 3669303,
     "location": "USA, New Jersey"
    },
    {
     "address": "78.27.242.81:8080",
-    "height": 3669095,
+    "height": 3669303,
     "location": "Poland"
    }
   ]
@@ -76,6 +76,6 @@
   "date": "2026-11-20T18:27:59Z",
   "repo": "amethyst-web-wallet",
   "url": "https://github.com/bytecoinBCN-community/amethyst-web-wallet/commit/8d206eca462b1c5d2397d84b7b3ca8a55f370251",
-  "at": "2026-11-26T09:30:36Z"
+  "at": "2026-11-26T10:45:55Z"
  }
 }
