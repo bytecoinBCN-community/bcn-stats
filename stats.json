@@ -1,8 +1,8 @@
 {
  "schema": 1,
- "updated": "2026-11-28T08:45:27Z",
- "height": 3670736,
- "difficulty": 8249578,
+ "updated": "2026-11-28T09:00:23Z",
+ "height": 3670741,
+ "difficulty": 8288975,
  "hashrate_khs": 69,
  "supply_percent": 99.9999,
  "our_share": {
@@ -76,6 +76,6 @@
   "date": "2026-11-20T18:27:59Z",
   "repo": "amethyst-web-wallet",
   "url": "https://github.com/bytecoinBCN-community/amethyst-web-wallet/commit/8d206eca462b1c5d2397d84b7b3ca8a55f370251",
-  "at": "2026-11-28T07:45:32Z"
+  "at": "2026-11-28T09:00:27Z"
  }
 }
